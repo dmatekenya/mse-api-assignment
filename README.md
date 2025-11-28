@@ -1,4 +1,5 @@
 # Malawi Stock Exchange API Assignment
+This assignment is one of the assessments in the **Data Science Capacity Building (DSCBI) Initiative** course, delivered through a collaboration between AIMS, NISR, and CENFRI in Kigali, Rwanda.  For more information about the course, visit the [course repository](https://github.com/dmatekenya/AIMS-DSCBI).
 
 ## Overview
 Build a comprehensive REST API to serve Malawi Stock Exchange (MSE) historical data. You'll process PDF reports spanning 2017-present, handle varying data formats, store data in PostgreSQL, and create API endpoints for data access.
@@ -14,7 +15,7 @@ Build a comprehensive REST API to serve Malawi Stock Exchange (MSE) historical d
 **Focus**: Master PDF-to-CSV pipeline
 - [ ] Analyze PDF report formats from 2017-present
 - [ ] Update `mse_pdf2csv.py` to handle all report formats
-- [ ] Process all historical reports to extract daily prices data into CSV files
+- [ ] Process all historical reports to extract daily price data into CSV files
 - [ ] Generate clean, standardized CSV files
 
 **Deliverable**: Working extraction notebook + processed CSV files. 
@@ -75,8 +76,8 @@ Build a comprehensive REST API to serve Malawi Stock Exchange (MSE) historical d
 - [ ] Updated `mse_pdf2csv.py` script that handles all report formats (2017-present)
 - [ ] Error handling for problematic PDFs
 - [ ] Data validation and cleaning
-- [ ] Daily CSV files in a folder withing the data folder with standardized format
-- [ ] Recommended: merged csv file for use in next step
+- [ ] Daily CSV files in a folder within the data folder with standardized format
+- [ ] Recommended: merged CSV file for use in next step
 
 
 ### Task 2: Database Management (15%)
@@ -84,7 +85,7 @@ Build a comprehensive REST API to serve Malawi Stock Exchange (MSE) historical d
 
 **Requirements**:
 - [ ] Create a database, you can call it `mse_db` or any other name
-- [ ] Add two tables, one for `tickers` (as we did in class exercise) and another for `daily prices`
+- [ ] Add two tables, one for `tickers` (as we did in class exercise) and another for `daily_prices`
 - [ ] Make sure you allow missing values in some columns as necessary 
 - [ ] Handle duplicate records and data conflicts
 - [ ] Load/import data into the database tables
@@ -161,7 +162,7 @@ Build a comprehensive REST API to serve Malawi Stock Exchange (MSE) historical d
 Showcase your functional API using detailed visual documentation. Create a `screenshots` folder inside the `docs` directory where instructors can review your demonstration materials as outlined in the requirements below.
 
 **Required Screenshots** (submit in `screenshots/` folder):
-- [ ] **Startup**: Terminal showing `uvivorn main:app --reload` running successfully
+- [ ] **Startup**: Terminal showing `uvicorn main:app --reload` running successfully
 - [ ] **API Home**: Browser showing API running at `http://localhost:8000`
 - [ ] **Interactive Docs**: FastAPI docs at `http://localhost:8000/docs`
 - [ ] **Endpoint Testing**: Each of the 3-5 endpoints returning sample data
@@ -173,7 +174,7 @@ Showcase your functional API using detailed visual documentation. Create a `scre
 - Name files descriptively: `01_api_startup.png`, `02_interactive_docs.png`, etc.
 
 
-## Bonus Tasks (Optional-Additional Points)
+## Bonus Tasks (Optional - Additional Points)
 
 ### Live API Demo via ngrok (10% points)
 **For Advanced Students**: Deploy your API using ngrok for live instructor testing
